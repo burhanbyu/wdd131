@@ -1,0 +1,47 @@
+@media (min-width: 1024px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        padding: 0 2rem;
+        position: relative;
+    }
+
+    header .logo {
+        position: static;
+        transform: none;
+        width: 90px;
+        height: auto;
+    }
+
+    header h1 {
+        position: static;
+        transform: none;
+        margin: 0;
+        font-size: 1.8rem;
+        flex: 1;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    #programCards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    form {
+        max-width: 600px;
+        margin: auto;
+    }
+}

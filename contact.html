@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Burhan Farah Hassan">
+    <meta name="description" content="Canada Refugee Pathway Support provides information and guidance for refugees and newcomers seeking opportunities and settlement services in Canada.">
+    <title>Contact Us | Canada Refugee Pathway Support</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <div class="logo-title">
+                <img src="images/logo.png" alt="Canada Refugee Pathway Support logo" class="logo">
+                <h1>Canada Refugee Pathway Support</h1>
+            </div>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions about refugee pathways, settlement support,
+                or newcomer services? Send us a message.
+            </p>
+        </section>
+
+        <section class="card">
+
+            <h3>Send Us a Message</h3>
+
+            <form id="contactForm">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="country">Country of Residence</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="inquiry">Inquiry Type</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="refugee-program">Refugee Program Information</option>
+                    <option value="housing">Housing Support</option>
+                    <option value="healthcare">Healthcare Services</option>
+                    <option value="employment">Employment Assistance</option>
+                    <option value="other">Other Questions</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+        <section class="card">
+            <h3>Our Mission</h3>
+            <p>
+                Canada Refugee Pathway Support exists to help refugees
+                and newcomers access reliable information and settlement services.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Canada Refugee Pathway Support</p>
+        <a href="index.html">This Page is for Educational Purposes Only</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
