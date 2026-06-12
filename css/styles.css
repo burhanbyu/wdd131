@@ -1,3 +1,6 @@
+/* =========================
+   VARIABLES
+========================= */
 :root {
     --red: #D52B1E;
     --white: #FFFFFF;
@@ -5,14 +8,18 @@
     --light: #F4F4F4;
 }
 
-/* Reset */
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base */
+/* =========================
+   BASE
+========================= */
 body {
     font-family: "Open Sans", sans-serif;
     color: var(--dark);
@@ -20,65 +27,76 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* =========================
+   HEADER
+========================= */
+.site-header {
     background-color: var(--red);
     color: var(--white);
-    height: 100px;
-    position: relative;
+    padding: 1rem 0;
 }
 
-/* Logo pinned far left */
-header .logo {
-    position: absolute;
-    left: 10rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 108px;
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* logo + title */
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
     object-fit: contain;
 }
 
-/* Title top center */
-header h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
-    position: absolute;
-    left: 55%;
-    top: 1rem;
-    transform: translateX(-50%);
+.logo-title h1 {
     margin: 0;
-    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: var(--white);
 }
 
-/* Navigation directly below title */
-nav {
-    position: absolute;
-    top: 4rem; /* places nav below the title */
-    left: 55%;
-    transform: translateX(-50%);
-}
-
-nav ul {
+/* =========================
+   NAVIGATION
+========================= */
+.site-nav ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: 4.5rem;
+    justify-content: center;
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
 
-nav a {
-    padding: 0.5rem 1rem;
+.site-nav a {
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
+    padding: 0.5rem 1rem;
 }
 
-nav a:hover,
-nav a.active {
+.site-nav a:hover,
+.site-nav a.active {
     text-decoration: underline;
 }
 
+/* =========================
+   HERO
+========================= */
 .hero {
     position: relative;
 }
@@ -109,12 +127,14 @@ nav a.active {
     border-radius: 5px;
 }
 
+/* =========================
+   MAIN
+========================= */
 main {
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
 }
-
 
 .card {
     background-color: var(--light);
@@ -128,6 +148,9 @@ main {
     gap: 1rem;
 }
 
+/* =========================
+   FORM
+========================= */
 form {
     display: flex;
     flex-direction: column;
@@ -159,6 +182,9 @@ button:hover {
     opacity: 0.9;
 }
 
+/* =========================
+   FOOTER
+========================= */
 footer {
     background-color: var(--red);
     color: var(--white);
@@ -173,8 +199,25 @@ footer a {
     margin-top: 0.5rem;
 }
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-    nav ul {
+
+    .logo-title {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .logo-title h1 {
+        font-size: 1.4rem;
+    }
+
+    .site-nav ul {
         flex-direction: column;
         gap: 0.5rem;
     }
